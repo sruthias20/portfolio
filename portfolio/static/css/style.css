@@ -205,3 +205,65 @@ nav {
   .contact-section .group form button:hover {
     filter: brightness(.9);
   }
+
+  @media (max-width: 740px) {
+    /* SECTION 1: Home */
+    .hero-section {
+      flex-direction: column-reverse;
+    }
+  
+    .hero-section .headshot img {
+      width: 300px;
+    }
+   
+  
+    /* SECTION 2: Contact */
+    .contact-section .group {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* NAVBAR */
+    nav {
+      padding: 0 20px;
+    }
+  
+    nav .right a {
+      font-size: 22px;
+    }
+  
+    nav .right a:last-child {
+      color: var(--text-color);
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    nav .right a span {
+      display: none;
+    }
+  
+    /* SECTION 1: Home */
+    .hero-section {
+      padding: 0 20px;
+    }
+  
+    .hero-section .text h2 {
+      font-size: 30px;
+    }
+  
+    /* SECTION 2: Skills */
+    .skills-section {
+      padding: 0 20px;
+    }
+  
+    .skills-section .cells .cell span {
+      font-size: 16px;
+    }
+  
+  
+    /* SECTION 3: Contact */
+    .contact-section {
+      padding: 0 20px;
+    }
+  }
