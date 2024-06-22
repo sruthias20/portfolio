@@ -1,3 +1,4 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
     <title>Portfolio</title>
   </head>
@@ -39,7 +40,7 @@
           <span>Email</span>
         </a>
 
-        <a href="" target="_blank"><button class="btn poppins">Resume</button></a>
+        <a href="{% static 'pdf/sql.pdf' %}" target="_blank"><button class="btn poppins">Resume</button></a>
       </div>
     </nav>
 
@@ -65,7 +66,7 @@
         </div>
 
         <div class="headshot">
-          <img src="" alt="umesh" />
+          <img src="{% static 'images/umesh.jpeg' %}" alt="umesh" />
         </div>
       </section>
 
@@ -77,37 +78,37 @@
 
         <div class="cells">
           <div class="cell">
-            <img src="" alt="html logo" />
+            <img src="{% static 'images/html.webp' %}" alt="html logo" />
             <span>HTML</span>
           </div>
 
           <div class="cell">
-            <img src="" alt="css logo" />
+            <img src="{% static 'images/css.jpg' %}" alt="css logo" />
             <span>CSS</span>
           </div>
 
           <div class="cell">
-            <img src="" alt="javascript logo" />
+            <img src="{% static 'images/js.png' %}" alt="javascript logo" />
             <span>JavaScript</span>
           </div>
 
           <div class="cell">
-            <img src="" alt="python logo" />
+            <img src="{% static 'images/python.jpg' %}" alt="python logo" />
             <span>Python</span>
           </div>
 
           <div class="cell">
-            <img src="" alt="django logo" />
+            <img src="{% static 'images/django.png' %}" alt="django logo" />
             <span>Django</span>
           </div>
 
           <div class="cell">
-            <img src="" alt="sql logo" />
+            <img src="{% static 'images/sql.webp' %}" alt="sql logo" />
             <span>SQL</span>
           </div>
 
           <div class="cell">
-            <img src="" alt="git logo" />
+            <img src="{% static 'images/gitgithub.webp' %}" alt="git logo" />
             <span>Git and Github</span>
           </div>
         </div>
